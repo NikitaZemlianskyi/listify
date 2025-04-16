@@ -38,3 +38,10 @@ h1 {
 .todo__creation {
   width: 500px;
 }
+
+.lists {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 80%;
+}

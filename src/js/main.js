@@ -39,6 +39,12 @@ listAddButton.on('click', function (event) {
     }
 });
 
+// Handle list deletion
+$(document).on('click', '.container__delete-btn', function (event) {
+    const container = $(event.target).closest('.container');
+    container.remove();
+});
+
 // Handle task completion toggling
 $(document).on('change', '.list-item__checkbox', function (event) {
     const checkbox = $(event.target);
