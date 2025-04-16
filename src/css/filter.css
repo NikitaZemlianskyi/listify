@@ -8,25 +8,26 @@
 
 .filter__btn {
   padding: 0.5rem 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-gray-400);
   border-radius: 4px;
   background: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  color: var(--color-primary-dark);
 }
 
 .filter__btn:hover {
-  background-color: #f0f0f0;
+  background-color: var(--color-gray-100);
 }
 
 .filter__btn--active {
-  background-color: #cf89f7;
-  color: white;
-  border-color: #cf89f7;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
 }
 
 .filter__btn--active:hover {
-  background-color: #bb53f8;
+  background-color: var(--color-primary-dark);
 }
 
 .container__list-item.hidden {

@@ -2,20 +2,61 @@
 @import url("input.css");
 @import url("list.css");
 @import url("filter.css");
+@import url("theme.css");
+
+:root {
+  /* Primary Colors */
+  --color-primary: #cf89f7;
+  --color-primary-dark: #bb53f8;
+
+  /* Neutral Colors */
+  --color-background: #f0f0f0;
+  --color-white: #ffffff;
+  --color-black: #161717;
+
+  /* Gray Scale */
+  --color-gray-100: #f0f0f0;
+  --color-gray-200: #e0e0e0;
+  --color-gray-300: #ddd;
+  --color-gray-400: #ccc;
+  --color-gray-500: #9ca3af;
+  --color-gray-600: #888;
+
+  /* Accent Colors */
+  --color-blue: #3b82f6;
+  --color-red: #ff6b6b;
+  --color-red-dark: #ff4c4c;
+  --color-red-light: #ff5252;
+
+  /* Dark Theme Colors */
+  --dark-background: #1a1a1a;
+  --dark-white: #2d2d2d;
+  --dark-text: #ffffff;
+  --dark-gray-100: #333333;
+  --dark-gray-200: #444444;
+  --dark-gray-300: #555555;
+  --dark-gray-400: #666666;
+  --dark-gray-500: #777777;
+  --dark-gray-600: #888888;
+}
+
 @font-face {
   font-family: "Rubik";
   src: url("../assets/fonts/static/Rubik-Medium.ttf");
 }
 
-* {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: "Rubik";
 }
 
 body {
   text-align: center;
-  background-color: #f0f0f0;
+  background-color: var(--color-background);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,18 +64,15 @@ body {
   gap: 20px;
 }
 
-/*Title*/
 h1 {
   margin: auto;
-
   font-weight: 400;
   font-size: 73px;
   line-height: 88px;
   letter-spacing: -0.035em;
-  color: #cf89f7;
+  color: var(--color-primary);
 }
 
-/*To-do-list creation container*/
 .todo__creation {
   width: 500px;
 }

@@ -3,7 +3,7 @@
   -webkit-appearance: none;
   width: 24px;
   height: 24px;
-  border: 2px solid #ddd;
+  border: 2px solid var(--color-gray-300);
   border-radius: 4px;
   margin-right: 8px;
   cursor: pointer;
@@ -11,23 +11,23 @@
 }
 
 .list-item__checkbox:checked {
-  background-color: #3B82F6;
-  border-color: #3B82F6;
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
 }
 
 .list-item__checkbox:checked::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 8px;
   top: 4px;
   width: 5px;
   height: 10px;
-  border: solid white;
+  border: solid var(--color-white);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
 
 .list-item__checkbox:checked + .list-item__name {
   text-decoration: line-through;
-  color: #9CA3AF;
+  color: var(--color-gray-500);
 }
