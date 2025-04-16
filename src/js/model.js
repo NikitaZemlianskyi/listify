@@ -1,4 +1,4 @@
-export default class Task {
+export class Task {
     static nextId = 1;
 
     constructor(text) {
@@ -12,13 +12,5 @@ export class TaskList {
     constructor(title) {
         this.title = title;
         this.tasks = [];
-    }
-
-    addTask(task) {
-        this.tasks.push(task);
-    }
-
-    removeTask(taskId) {
-        this.tasks = this.tasks.filter(task => task.id !== taskId);
     }
 }
