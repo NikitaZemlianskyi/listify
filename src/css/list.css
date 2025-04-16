@@ -1,0 +1,92 @@
+/*To-do-list container*/
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 40px;
+
+  width: max-content;
+
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+/*To-do-list title*/
+.container__title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 20px;
+
+  width: 246px;
+  height: 80px;
+
+  width: 214px;
+  height: 48px;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 48px;
+
+  color: #161717;
+}
+
+.container__list {
+  width: 100%;
+}
+
+/*To-do-list items container*/
+.container__list-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  gap: 20px;
+}
+
+/* Completed task styling */
+.container__list-item.completed .list-item__name {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/*To-do-list items name*/
+.list-item__name {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161717;
+  margin-right: auto;
+}
+
+/* Checkbox styling */
+.list-item__checkbox {
+  width: 24px;
+  height: 24px;
+}
+
+/* Delete button styling */
+.list-item__delete-btn {
+  font-family: "Rubik";
+  font-size: 14px;
+  padding: 4px 8px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.list-item__delete-btn:hover {
+  background-color: #ff4c4c;
+}

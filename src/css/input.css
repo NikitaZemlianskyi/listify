@@ -1,0 +1,57 @@
+/* Form container */
+.container__form,
+.todo__creation {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+/* Input field styling */
+.form__input,
+.todo__input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: "Rubik";
+  font-size: 16px;
+}
+
+.form__input::placeholder,
+.todo__input::placeholder {
+  color: #9ca3af;
+}
+
+.form__input:focus,
+.todo__input:focus {
+  outline: none;
+  border-color: #cf89f7;
+}
+
+/* Submit button styling */
+.form__submit,
+.todo__button {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background: #cf89f7;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__submit:hover,
+.todo__button:hover {
+  transform: translateY(-2px);
+}
+
+.form__submit:active,
+.todo__button:active {
+  transform: translateY(2px);
+}

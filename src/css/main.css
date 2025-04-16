@@ -1,0 +1,40 @@
+@import url("checkbox.css");
+@import url("input.css");
+@import url("list.css");
+@import url("filter.css");
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/static/Rubik-Medium.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik";
+}
+
+body {
+  text-align: center;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/*Title*/
+h1 {
+  margin: auto;
+
+  font-weight: 400;
+  font-size: 73px;
+  line-height: 88px;
+  letter-spacing: -0.035em;
+  color: #cf89f7;
+}
+
+/*To-do-list creation container*/
+.todo__creation {
+  width: 500px;
+}
